@@ -15,7 +15,7 @@ jobs:
         run: docker build . --tag my-image-name:$(date +%s)
 
       - name: Publish to Registry
-        uses: paramscalent/go-github-actions@main
+        uses: paramscalent/go-github-actions
         with:
           name: Param-Scalent/go-github-actions
           username: ${{ secrets.DOCKER_USERNAME }}
